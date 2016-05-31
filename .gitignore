@@ -1,0 +1,6 @@
+Web.Secret.config
+*.log
+[Bb]in
+obj/
+packages/
+.vs

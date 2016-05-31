@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/Site.css" media="all" />
+</head>
+<body>
+    <ul>
+        <li>@Html.ActionLink("Trigger an Event", "Index", "Trigger")</li>
+        <li>@Html.ActionLink("Private Channel Code Sample", "Index", "Private")</li>
+        <li>@Html.ActionLink("Presence Channel Code Sample", "Index", "Presence")</li>
+    </ul>
+    @RenderBody()
+    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>
